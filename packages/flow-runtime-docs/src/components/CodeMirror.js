@@ -3,7 +3,7 @@
 import React from 'react';
 import {observer} from 'mobx-react';
 
-import ReactCodeMirror from 'react-codemirror';
+import ReactCodeMirror from 'react-codemirror-2';
 import 'codemirror/mode/javascript/javascript';
 import 'codemirror/lib/codemirror.css';
 
