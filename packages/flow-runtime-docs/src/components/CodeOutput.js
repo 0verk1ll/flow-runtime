@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import CodeMirror from 'react-codemirror';
+import CodeMirror from 'react-codemirror-2';
 import 'codemirror/mode/javascript/javascript';
 import 'codemirror/lib/codemirror.css';
 
