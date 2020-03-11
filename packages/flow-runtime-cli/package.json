@@ -45,7 +45,7 @@
     "flow-config-parser": "^0.3.0",
     "flow-parser": "^0.38.0",
     "flow-runtime": "^0.17.0",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.2",
     "prettier": "^0.11.0"
   }
 }
