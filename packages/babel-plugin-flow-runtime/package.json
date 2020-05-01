@@ -13,7 +13,9 @@
     "build": "rimraf ./lib && babel -d ./lib ./src && npm run makeFixturesJSON",
     "makeFixturesJSON": "node tools/makeFixturesJSON.js > ./fixtures.json",
     "test": "mocha",
-    "watch": "mocha --watch"
+    "watch": "mocha --watch",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "MIT",
@@ -49,9 +51,11 @@
     "@babel/traverse": "^7.0.0",
     "@babel/types": "^7.0.0",
     "camelcase": "^3.0.0",
-    "flow-config-parser": "^0.3.0"
+    "flow-config-parser": "^0.3.0",
+    "snyk": "^1.316.1"
   },
   "eslintConfig": {
     "extends": "./config/eslint.js"
-  }
+  },
+  "snyk": true
 }
