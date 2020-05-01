@@ -7,10 +7,11 @@
   "main": "babel-plugin-flow-prepack.js",
   "scripts": {
     "lint": "eslint ./src && flow check",
-    "prepublish": "npm run build",
+    "prepublish": "yarn run snyk-protect && npm run build",
     "build": "babel -d ./lib ./src",
     "test": "mocha",
-    "watch": "mocha --watch"
+    "watch": "mocha --watch",
+    "snyk-protect": "snyk protect"
   },
   "author": "",
   "license": "MIT",
@@ -42,9 +43,11 @@
     "babel-types": "^6.16.0",
     "babylon": "^6.16.1",
     "camelcase": "^3.0.0",
-    "flow-config-parser": "^0.3.0"
+    "flow-config-parser": "^0.3.0",
+    "snyk": "^1.316.1"
   },
   "eslintConfig": {
     "extends": "./config/eslint.js"
-  }
+  },
+  "snyk": true
 }
